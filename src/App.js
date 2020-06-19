@@ -1,10 +1,26 @@
 import React, { Fragment } from 'react';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+
+import Navbar from './components/layout/Navigation';
+import Landing from './components/pages/Landing';
+import Experiences from './components/pages/Experiences';
+import Projects from './components/pages/Projects';
+import Education from './components/pages/Education';
 
 function App() {
   return (
-    <Fragment>
-      <div>Hello World</div>
-    </Fragment>
+    <Router>
+      <Fragment>
+        <Navbar />
+
+        <Switch>
+          <Route exact path='/' component={Landing} />
+          <Route exact path='/experiences' component={Experiences} />
+          <Route exact path='/projects' component={Projects} />
+          <Route exact path='/education' component={Education} />
+        </Switch>
+      </Fragment>
+    </Router>
   );
 }
 
