@@ -5,8 +5,8 @@ import { Card, CardDeck, Button } from 'react-bootstrap';
 const LandingCards = ({ info }) => {
   return (
     <CardDeck className='text-center p-3'>
-      {info.map(card => (
-        <Card>
+      {info.map((card, index) => (
+        <Card key={index}>
           <Card.Img variant='top' src={card.img} />
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>

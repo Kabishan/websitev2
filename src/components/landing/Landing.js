@@ -37,43 +37,42 @@ const Landing = () => {
       <div
         className='d-flex justify-content-center p-5 text-center'
         style={{ backgroundImage: `url(${bg})` }}
-        fluid
       >
         <Card style={{ width: '25rem', border: '#17a2b8 solid 5px' }}>
           <Card.Img variant='top' src={me} />
           <Card.Body>
             <h3>Kabishan Suvendran</h3>
             <div className='emotes pb-2'>
-              <i class='fa fa-snowflake-o' aria-hidden='true'></i>
-              <i class='fa fa-rocket' aria-hidden='true'></i>
-              <i class='fa fa-music' aria-hidden='true'></i>
+              <i className='fa fa-snowflake-o' aria-hidden='true'></i>
+              <i className='fa fa-rocket' aria-hidden='true'></i>
+              <i className='fa fa-music' aria-hidden='true'></i>
             </div>
             <p>Third Year Software Engineering and Management Student</p>
             <div>
-              <ul class='social-network social-circle'>
+              <ul className='social-network social-circle'>
                 <li>
                   <a
                     href='https://github.com/Kabishan'
-                    class='github'
+                    className='github'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <i class='fa fa-github'></i>
+                    <i className='fa fa-github'></i>
                   </a>
                 </li>
                 <li>
                   <a
                     href='https://www.linkedin.com/in/kabishan'
-                    class='linkedin'
+                    className='linkedin'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
-                    <i class='fa fa-linkedin'></i>
+                    <i className='fa fa-linkedin'></i>
                   </a>
                 </li>
                 <li>
                   <a href='mailto:suvendrk@mcmaster.ca' className='email'>
-                    <i class='fa fa-envelope'></i>
+                    <i className='fa fa-envelope'></i>
                   </a>
                 </li>
               </ul>
