@@ -7,6 +7,8 @@ import Experiences from './components/pages/Experiences';
 import Projects from './components/pages/Projects';
 import Education from './components/pages/Education';
 
+import './App.css';
+
 function App() {
   return (
     <Router>
