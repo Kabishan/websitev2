@@ -18,7 +18,13 @@ const Landing = () => {
         <Card style={{ width: '25rem', border: '#17a2b8 solid 5px' }}>
           <Card.Img variant='top' src={me} />
           <Card.Body>
-            <h3 className='pb-2'>Kabishan Suvendran</h3>
+            <h3>Kabishan Suvendran</h3>
+            <div className='emotes pb-2'>
+              <i class='fa fa-snowflake-o' aria-hidden='true'></i>
+              <i class='fa fa-rocket' aria-hidden='true'></i>
+              <i class='fa fa-music' aria-hidden='true'></i>
+            </div>
+            <p>Third Year Software Engineering and Management Student</p>
             <div>
               <ul class='social-network social-circle'>
                 <li>

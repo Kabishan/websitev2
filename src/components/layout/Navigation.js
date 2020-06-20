@@ -1,5 +1,6 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Navigation = () => {
   return (
@@ -10,16 +11,35 @@ const Navigation = () => {
       variant='dark'
       className='sticky-top'
     >
-      <Navbar.Brand href='/'>Kabishan Suvendran</Navbar.Brand>
+      <Navbar.Brand as={Link} to='/'>
+        Kabishan Suvendran
+      </Navbar.Brand>
       <Navbar.Toggle aria-controls='responsive-navbar-nav' />
       <Navbar.Collapse id='responsive-navbar-nav'>
         <Nav className='mr-auto'></Nav>
         <Nav>
-          <Nav.Link href='/experiences'>Experiences</Nav.Link>
-          <Nav.Link eventKey={2} href='/projects'>
+          <Nav.Link
+            eventKey={1}
+            as={Link}
+            to='/experiences'
+            className='text-center'
+          >
+            Experiences
+          </Nav.Link>
+          <Nav.Link
+            eventKey={2}
+            as={Link}
+            to='/projects'
+            className='text-center'
+          >
             Projects
           </Nav.Link>
-          <Nav.Link eventKey={3} href='/education'>
+          <Nav.Link
+            eventKey={3}
+            as={Link}
+            to='/education'
+            className='text-center'
+          >
             Education
           </Nav.Link>
         </Nav>
