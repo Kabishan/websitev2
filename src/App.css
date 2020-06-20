@@ -18,9 +18,8 @@ ul.social-network li {
   background-color: #000;
 }
 
-.social-network a.linkedin:hover i,
-.social-network a.github:hover i {
-  color: #fff;
+.social-network a.email:hover {
+  background-color: #dc143c;
 }
 
 .social-circle li a {

@@ -1,5 +1,5 @@
 import React, { Fragment } from 'react';
-import { Card, CardDeck, Button, Jumbotron, Container } from 'react-bootstrap';
+import { Card, Jumbotron, Container } from 'react-bootstrap';
 
 import me from '../../assets/me.jpg';
 import bg from '../../assets/bg.jpg';
@@ -7,7 +7,31 @@ import exp from '../../assets/exp.jpg';
 import proj from '../../assets/proj.png';
 import edu from '../../assets/edu.jpg';
 
+import LandingCards from './LandingCards';
+
 const Landing = () => {
+  const info = [
+    {
+      img: exp,
+      title: 'Experiences',
+      desc: 'Check out my previous work experiences here...',
+      link: '/experiences',
+    },
+    {
+      img: proj,
+      title: 'Projects',
+      desc:
+        'I am constantly working on something new and exciting, check it out...',
+      link: '/projects',
+    },
+    {
+      img: edu,
+      title: 'Education',
+      desc: 'Find my past and current education here...',
+      link: '/education',
+    },
+  ];
+
   return (
     <Fragment>
       <div
@@ -47,6 +71,11 @@ const Landing = () => {
                     <i class='fa fa-linkedin'></i>
                   </a>
                 </li>
+                <li>
+                  <a href='mailto:suvendrk@mcmaster.ca' className='email'>
+                    <i class='fa fa-envelope'></i>
+                  </a>
+                </li>
               </ul>
             </div>
           </Card.Body>
@@ -67,42 +96,8 @@ const Landing = () => {
         </Container>
       </Jumbotron>
 
-      <CardDeck className='text-center p-3'>
-        <Card>
-          <Card.Img variant='top' src={exp} />
-          <Card.Body>
-            <Card.Title>Experiences</Card.Title>
-            <Card.Text>
-              Check out my previous work experiences here...
-            </Card.Text>
-            <Button variant='info' href='/experiences'>
-              Experiences
-            </Button>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Img variant='top' src={proj} />
-          <Card.Body>
-            <Card.Title>Projects</Card.Title>
-            <Card.Text>
-              I am constantly coming up with something exciting, check it out...
-            </Card.Text>
-            <Button variant='info' href='/projects'>
-              Projects
-            </Button>
-          </Card.Body>
-        </Card>
-        <Card>
-          <Card.Img variant='top' src={edu} />
-          <Card.Body>
-            <Card.Title>Education</Card.Title>
-            <Card.Text>Find my past and current education here...</Card.Text>
-            <Button variant='info' href='/education'>
-              Education
-            </Button>
-          </Card.Body>
-        </Card>
-      </CardDeck>
+      <LandingCards info={info} />
+
       <Card className='text-center' bg='light'>
         <Card.Body className='text-muted'>
           <p>&copy; 2020 Kabishan</p>
