@@ -45,6 +45,7 @@ ul.social-network li {
   transform: rotate(360deg);
   transition: all 0.2s;
 }
+
 .social-circle i {
   color: #fff;
   transition: all 0.8s;

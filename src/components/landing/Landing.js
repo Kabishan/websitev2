@@ -50,11 +50,6 @@ const Landing = () => {
       desc: 'Skill: Advanced',
     },
     {
-      img: java,
-      title: 'Java',
-      desc: 'Skill: Advanced',
-    },
-    {
       img: c,
       title: 'C',
       desc: 'Skill: Advanced',
@@ -70,14 +65,19 @@ const Landing = () => {
       desc: 'Skill: Advanced',
     },
     {
-      img: js,
-      title: 'JavaScript',
+      img: java,
+      title: 'Java',
       desc: 'Skill: Advanced',
     },
     {
       img: sql,
       title: 'SQL',
       desc: 'Skill: Intermediate',
+    },
+    {
+      img: js,
+      title: 'JavaScript',
+      desc: 'Skill: Advanced',
     },
   ];
 
