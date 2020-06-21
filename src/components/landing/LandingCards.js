@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
 import { Card, CardDeck, Button } from 'react-bootstrap';
 
@@ -11,9 +11,13 @@ const LandingCards = ({ info }) => {
           <Card.Body>
             <Card.Title>{card.title}</Card.Title>
             <Card.Text>{card.desc}</Card.Text>
-            <Button variant='info' href='/experiences'>
-              {card.title}
-            </Button>
+            {card.btn && (
+              <Fragment>
+                <Button variant='info' href='/experiences'>
+                  {card.btn}
+                </Button>
+              </Fragment>
+            )}
           </Card.Body>
         </Card>
       ))}

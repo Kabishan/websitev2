@@ -7,6 +7,14 @@ import exp from '../../assets/exp.jpg';
 import proj from '../../assets/proj.png';
 import edu from '../../assets/edu.jpg';
 
+import python from '../../assets/python.png';
+import java from '../../assets/java.png';
+import c from '../../assets/c.png';
+import html from '../../assets/html.png';
+import css from '../../assets/css.png';
+import js from '../../assets/js.png';
+import sql from '../../assets/sql.png';
+
 import LandingCards from './LandingCards';
 
 const Landing = () => {
@@ -15,6 +23,7 @@ const Landing = () => {
       img: exp,
       title: 'Experiences',
       desc: 'Check out my previous work experiences here...',
+      btn: 'Experiences',
       link: '/experiences',
     },
     {
@@ -22,13 +31,53 @@ const Landing = () => {
       title: 'Projects',
       desc:
         'I am constantly working on something new and exciting, check it out...',
+      btn: 'Projects',
       link: '/projects',
     },
     {
       img: edu,
       title: 'Education',
       desc: 'Find my past and current education here...',
+      btn: 'Education',
       link: '/education',
+    },
+  ];
+
+  const lang = [
+    {
+      img: python,
+      title: 'Python',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: java,
+      title: 'Java',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: c,
+      title: 'C',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: html,
+      title: 'HTML',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: css,
+      title: 'CSS',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: js,
+      title: 'JavaScript',
+      desc: 'Skill: Advanced',
+    },
+    {
+      img: sql,
+      title: 'SQL',
+      desc: 'Skill: Intermediate',
     },
   ];
 
@@ -81,11 +130,7 @@ const Landing = () => {
         </Card>
       </div>
 
-      <Jumbotron
-        fluid
-        className='text-center'
-        style={{ backgroundColor: '#17a2b8', color: '#fff' }}
-      >
+      <Jumbotron fluid className='text-center bg-info text-light'>
         <Container>
           <h1>Personal Portfolio</h1>
           <p>
@@ -96,6 +141,14 @@ const Landing = () => {
       </Jumbotron>
 
       <LandingCards info={info} />
+
+      <Jumbotron fluid className='text-center bg-info text-light'>
+        <Container>
+          <h1>Programming Languages</h1>
+        </Container>
+      </Jumbotron>
+
+      <LandingCards info={lang} />
 
       <Card className='text-center' bg='light'>
         <Card.Body className='text-muted'>
