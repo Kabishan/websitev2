@@ -155,7 +155,13 @@ const Landing = () => {
         </Container>
       </Jumbotron>
 
-      <LandingCards info={info} />
+      <div className='container-fluid mt-4'>
+        <div className='row justify-content-center'>
+          {info.map((card, index) => (
+            <LandingCards key={index} card={card} />
+          ))}
+        </div>
+      </div>
 
       <Jumbotron fluid className='text-center bg-info text-light'>
         <Container>
@@ -163,7 +169,13 @@ const Landing = () => {
         </Container>
       </Jumbotron>
 
-      <LandingCards info={lang} />
+      <div className='container-fluid mt-4'>
+        <div className='row justify-content-center'>
+          {lang.map((card, index) => (
+            <LandingCards key={index} card={card} />
+          ))}
+        </div>
+      </div>
 
       <Card className='text-center' bg='light'>
         <Card.Body className='text-muted'>
