@@ -75,3 +75,7 @@ ul.social-network li {
 .carousel-indicators .active {
   background-color: #43c3d6;
 }
+
+.jumbotron {
+  margin-bottom: 0;
+}

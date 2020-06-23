@@ -166,6 +166,7 @@ const Landing = () => {
       <Jumbotron fluid className='text-center bg-info text-light'>
         <Container>
           <h1>Programming Languages</h1>
+          <p>The languages featured below are those I have used</p>
         </Container>
       </Jumbotron>
 
