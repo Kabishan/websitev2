@@ -48,11 +48,13 @@ const Landing = () => {
       img: python,
       title: 'Python',
       desc: 'Skill: Advanced',
+      projects: 'Projects: Blackjack, ASCII Art',
     },
     {
       img: c,
       title: 'C',
       desc: 'Skill: Advanced',
+      projects: 'Projects: Image Convolution, Fibonacci Fractals',
     },
     {
       img: html,
@@ -68,6 +70,7 @@ const Landing = () => {
       img: java,
       title: 'Java',
       desc: 'Skill: Advanced',
+      projects: 'Projects: YouRecommend',
     },
     {
       img: sql,

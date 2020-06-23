@@ -20,6 +20,11 @@ const LandingCards = ({ info }) => {
                     </Button>
                   </Fragment>
                 )}
+                {card.projects && (
+                  <Fragment>
+                    <p>{card.projects}</p>
+                  </Fragment>
+                )}
               </Card.Body>
             </Card>
           </div>
