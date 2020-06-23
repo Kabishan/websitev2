@@ -1,5 +1,5 @@
-import React, { Fragment } from 'react';
-import { Card, Jumbotron, Container } from 'react-bootstrap';
+import React, { Fragment, useState } from 'react';
+import { Card, Jumbotron, Container, Modal } from 'react-bootstrap';
 
 import me from '../../assets/me.jpg';
 import bg from '../../assets/bg.jpg';
@@ -84,6 +84,12 @@ const Landing = () => {
     },
   ];
 
+  const [show, setShow] = useState(false);
+
+  const handler = () => {
+    setShow(!show);
+  };
+
   return (
     <Fragment>
       <div
@@ -123,9 +129,15 @@ const Landing = () => {
                   </a>
                 </li>
                 <li>
-                  <a href='mailto:suvendrk@mcmaster.ca' className='email'>
+                  <a href='#/' className='email' onClick={handler}>
                     <i className='fa fa-envelope'></i>
                   </a>
+                  <Modal show={show} onHide={handler}>
+                    <Modal.Header closeButton>
+                      <Modal.Title>Email</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>suvendrk@mcmaster.ca</Modal.Body>
+                  </Modal>
                 </li>
               </ul>
             </div>
