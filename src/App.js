@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from './components/layout/Navigation';
 import Landing from './components/landing/Landing';
 import Experiences from './components/experiences/Experiences';
-import Projects from './components/Projects';
+import Projects from './components/projects/Projects';
 import Education from './components/Education';
 
 import './App.css';

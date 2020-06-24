@@ -2,26 +2,26 @@ import React, { Fragment } from 'react';
 import { Jumbotron, Carousel } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-const ExperienceItem = ({ exp: { job, company, time, activities } }) => {
+const ProjectItem = ({ proj: { title, desc, type, features } }) => {
   return (
     <Fragment>
       <Jumbotron className='text-center bg-info text-light' fluid>
-        <h2>{job}</h2>
-        <p className='lead mb-2'>{company}</p>
-        <p>{time}</p>
+        <h2>{title}</h2>
+        <p className='lead mb-2'>{desc}</p>
+        <p>{type}</p>
       </Jumbotron>
 
       <Carousel className='text-info'>
-        {activities.map((activity, index) => (
+        {features.map((feature, index) => (
           <Carousel.Item key={index}>
             <img
               className='d-block w-100'
-              src={activity.img}
-              alt={activity.name}
+              src={feature.img}
+              alt={feature.name}
             />
             <Carousel.Caption>
-              <h3 className='mb-3'>{activity.name}</h3>
-              <p className='mb-3'>{activity.desc}</p>
+              <h3 className='mb-3'>{feature.name}</h3>
+              <p className='mb-3'>{feature.desc}</p>
             </Carousel.Caption>
           </Carousel.Item>
         ))}
@@ -30,8 +30,8 @@ const ExperienceItem = ({ exp: { job, company, time, activities } }) => {
   );
 };
 
-ExperienceItem.propTypes = {
-  exp: PropTypes.object.isRequired,
+ProjectItem.propTypes = {
+  proj: PropTypes.object.isRequired,
 };
 
-export default ExperienceItem;
+export default ProjectItem;
