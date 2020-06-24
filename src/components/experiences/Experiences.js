@@ -2,11 +2,11 @@ import React, { Fragment } from 'react';
 
 import ExperienceItem from './ExperienceItem';
 
-import etch from '../../assets/etch.jpg';
-import ai from '../../assets/ai.png';
-import laser from '../../assets/laser.jpg';
-import bus from '../../assets/bus.jpg';
-import school from '../../assets/school.jpg';
+import etch from '../../assets/experiences/etch.jpg';
+import ai from '../../assets/experiences/ai.png';
+import laser from '../../assets/experiences/laser.jpg';
+import bus from '../../assets/experiences/bus.jpg';
+import school from '../../assets/experiences/school.jpg';
 
 const Experiences = () => {
   const exps = [

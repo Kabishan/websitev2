@@ -1,19 +1,19 @@
 import React, { Fragment, useState } from 'react';
 import { Card, Jumbotron, Container, Modal } from 'react-bootstrap';
 
-import me from '../../assets/me.jpg';
-import bg from '../../assets/bg.jpg';
-import exp from '../../assets/exp.jpg';
-import proj from '../../assets/proj.png';
-import edu from '../../assets/edu.jpg';
+import me from '../../assets/landing/me.jpg';
+import bg from '../../assets/landing/bg.jpg';
+import exp from '../../assets/landing/exp.jpg';
+import proj from '../../assets/landing/proj.png';
+import edu from '../../assets/landing/edu.jpg';
 
-import python from '../../assets/python.png';
-import java from '../../assets/java.png';
-import c from '../../assets/c.png';
-import html from '../../assets/html.png';
-import css from '../../assets/css.png';
-import js from '../../assets/js.png';
-import sql from '../../assets/sql.png';
+import python from '../../assets/landing/python.png';
+import java from '../../assets/landing/java.png';
+import c from '../../assets/landing/c.png';
+import html from '../../assets/landing/html.png';
+import css from '../../assets/landing/css.png';
+import js from '../../assets/landing/js.png';
+import sql from '../../assets/landing/sql.png';
 
 import LandingCards from './LandingCards';
 
