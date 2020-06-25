@@ -2,12 +2,11 @@ import React, { Fragment } from 'react';
 import { Jumbotron, Carousel } from 'react-bootstrap';
 import PropTypes from 'prop-types';
 
-const ExperienceItem = ({ exp: { job, company, time, activities } }) => {
+const EducationItem = ({ edu: { school, time, activities } }) => {
   return (
     <Fragment>
       <Jumbotron className='text-center bg-info text-light' fluid>
-        <h2>{job}</h2>
-        <p className='lead mb-2'>{company}</p>
+        <h2>{school}</h2>
         <p>{time}</p>
       </Jumbotron>
 
@@ -30,8 +29,8 @@ const ExperienceItem = ({ exp: { job, company, time, activities } }) => {
   );
 };
 
-ExperienceItem.propTypes = {
-  exp: PropTypes.object.isRequired,
+EducationItem.propTypes = {
+  edu: PropTypes.object.isRequired,
 };
 
-export default ExperienceItem;
+export default EducationItem;
