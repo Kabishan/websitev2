@@ -1,25 +1,26 @@
 import React, { Fragment } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import { Card, Button } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
 
-const LandingCards = ({ card }) => {
+const LandingCards = ({ card: { img, title, desc, btn, link, projects } }) => {
   return (
     <div className='col-auto mb-3 text-center'>
       <Card style={{ width: '18rem' }} className='h-100'>
-        <Card.Img variant='top' src={card.img} />
+        <Card.Img variant='top' src={img} />
         <Card.Body>
-          <Card.Title>{card.title}</Card.Title>
-          <Card.Text>{card.desc}</Card.Text>
-          {card.btn && (
+          <Card.Title>{title}</Card.Title>
+          <Card.Text>{desc}</Card.Text>
+          {btn && (
             <Fragment>
-              <Button variant='info' href='/experiences'>
-                {card.btn}
-              </Button>
+              <Link className='btn bg-info' style={{ color: '#fff' }} to={link}>
+                {btn}
+              </Link>
             </Fragment>
           )}
-          {card.projects && (
+          {projects && (
             <Fragment>
-              <p>{card.projects}</p>
+              <p>{projects}</p>
             </Fragment>
           )}
         </Card.Body>
